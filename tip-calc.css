@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(127,199,212);
+    background: linear-gradient(135deg, rgba(127,199,212,1) 5%, rgba(7,231,229,1) 49%, rgba(20,31,182,1) 100%);
+    text-align: center;
+}
+header{
+    background-color: rgba(12, 127, 235, 0.89);
+    color: rgb(247, 240, 240);
+    padding: 10px 0;
+    margin: 30px 40px 0 40px;
+    margin-bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.total-section{
+    min-height: calc(100vh - 37px - 18px);
+   background-color: rgb(255, 255, 255);
+   margin: 15px 30px 50px 30px;
+
+   padding-top: 30px;
+   border-radius: 10px;
+}
+.bill{
+    margin-bottom: 30px;
+}
+ .inp-box{
+    width: 70%;
+    padding: 8px 20px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(94, 123, 204);
+    font-size: 1.2rem;
+}
+.inp-box:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(248, 159, 159);
+}
+.naira-sign{
+    font-size: 1.2rem;
+}
+.tip-range__description{
+    display: block;
+    font-size: 1.3rem;
+    opacity: .7;
+}
+.range-slider{
+appearance: none;
+width: 70%;
+height: 5px;
+background-color: rgb(150, 124, 124);
+border-radius: 20px;
+}
+input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(187, 9, 172);
+}
+.tip-range__display{
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+
+.people-sharing{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+footer{
+    background-color: rgb(11, 231, 213);
+}

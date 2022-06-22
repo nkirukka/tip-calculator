@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip-calc.css">
     <title>Tip Calculator</title>
 </head>
 
@@ -14,34 +15,25 @@
     </header>
 
     <section class="total-section">
-        <div>
-            <label for="bill-amount">Bill</label>
-            <input type="text" name="bill-amount" id="bill-amount">
+        <div class="bill">
+            <input type="text" name="bill-amount" class="inp-box" placeholder="Bill Amount">
+            <span class="naira-sign"> &#8358</span>
+        </div>
+        <div class="tip">
+            <label for="tip-percent" class="tip-range__description">How did you enjoy the service?</label>
+            <input type="range" class="range-slider" name="tip-percent" step="5" value="30" max="100">
+            <span class="tip-range__display">0%</span>
+        </div>
+        <div class="people-sharing">
+            <input type="text" name="" class="inp-box" placeholder="How many people sharing?">
         </div>
         <div>
-            <label for="tip">Tip</label>
-            <input type="text" name="tip" id="tip">
-        </div>
-        <div>
-            <span class="total">Total</span> <span class="total-display">0</span>
-        </div>
-    </section>
-
-    <section class="people-section">
-        <div>
-            <label for="tip-percent">How was your service?</label>
-        <input type="range" name="tip-percent" step="5" value="30" max="100" id="tip-percent">
-        <span class="tip-range__display">0%</span>
-        </div>
-        <div>
-            <label for="people-sharing">How many people?</label>
-            <input type="range" min="1" max="100" step="1" name="people-sharing" id="people-sharing">
-            <span class="sharing-display">1</span>
+            <p>Total <span class="total-display">0</span></p>
         </div>
     </section>
 
 
-
+<footer>Coded by Nkiruka</footer>
 
 </body>
 
